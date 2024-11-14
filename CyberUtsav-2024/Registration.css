@@ -83,5 +83,9 @@ body {
   .register-btn:hover {
     transform: scale(1.1);
     background-color: rgb(233, 132, 206);
-    color: #333;
+    color: #81e8ff;
   }
+  a {
+    color: rgb(125, 212, 255); 
+    text-decoration: azure;
+}
