@@ -1,59 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MindSpark Trivia Registration</title>
-    <link rel="stylesheet" href="Registration.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="Registration.css">
   </head>
 
   <body>
     <div class="landing-page" id="landingPage">
+        <i class="fas fa-lightbulb fa-3x"></i>
       <h1>MindSpark Trivia</h1>
-      <p><strong>Where curiosity meets competition</strong></p>
+      <p><b>Where Curiosity meets competition</b></p>
 
-      <!-- Registration Form Container -->
+      <!-- Registration Form -->
       <div class="container">
         <h2>Register for the Quiz</h2>
-        <form id="registrationForm">
+        <form id="form-container">
           <div>
-            <label for="firstName">First Name:</label>
-            <input
-              type="text"
-              id="firstName"
-              name="firstName"
-              maxlength="15"
-              placeholder="Enter your first name"
-              required
-            />
-          </div>
-          <div>
-            <label for="lastName">Last Name:</label>
-            <input
-              type="text"
-              id="lastName"
-              name="lastName"
-              maxlength="15"
-              placeholder="Enter your last name"
-              required
-            />
-          </div>
-          <div>
-            <label for="email">Email:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Enter your email"
-              required
-            />
-          </div>
-        </form>
+            <label for="Username"></label>
+            <input type="text" id="Username" name="Username" maxlength="15" placeholder="Enter your username" required>
+        </div>
       </div>
-      <button id="start-btn" class="start-btn btn">Start Quiz</button>
+      <button id="reguster-btn" class="register-btn">Register</button>
+    </form>
     </div>
-    <footer>
-     ff
-    </footer>
   </body>
 </html>
