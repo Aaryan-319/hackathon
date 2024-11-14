@@ -1,0 +1,187 @@
+/* Reset and Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background: color(135deg, rgb(25, 254, 255));
+    background-size: 400% 400%;
+    animation: gradient 12s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+  }
+  
+  /* Landing Page */
+  .landing-page {
+    text-align: center;
+    max-width: 600px;
+    padding: 2rem;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .landing-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #40e3fc;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .landing-page p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .category-btn {
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    margin: 8px;
+    background-color: #4a4a4a;
+    color: rgb(104, 210, 255);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  .category-btn:hover {
+    transform: scale(1.1);
+    background-color: rgb(233, 132, 206);
+    color: #333;
+  }
+  
+  /* Quiz Container */
+  .quiz-container {
+    max-width: 600px;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .category-title {
+    font-size: 2rem;
+    color: #74c5f8;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1rem;
+  }
+  
+  .question-container {
+    font-size: 1.5rem;
+    color: #e5e5e5;
+    margin-bottom: 1.5rem;
+  }
+  
+  .choices-container button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    margin: 8px 0;
+    background-color: #555;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  .choices-container button:hover {
+    background-color: #777;
+  }
+  
+  .choices-container .correct {
+    background-color: #4caf50;
+    color: #fff;
+    border: 1px solid #3e8e41;
+  }
+  .choices-container .incorrect {
+    background-color: #f44336;
+    color: #fff;
+    border: 1px solid #d32f2f;
+  }
+  
+  .feedback {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: all 0.5s ease;
+  }
+  .feedback.correct {
+    color: #4caf50;
+  }
+  .feedback.incorrect {
+    color: #f44336;
+  }
+  
+  /* Lives Counter */
+  #livesContainer {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    color: #61cafb;
+  }
+  
+  #progressBar {
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  #progressBar::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 0%;
+    background-color: #4fabda;
+    border-radius: 5px;
+    transition: width 0.5s ease;
+  }
+  
+  /* Gradient Animation */
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .landing-page, .quiz-container {
+      width: 90%;
+      padding: 1.5rem;
+    }
+    .category-btn, .choices-container button {
+      padding: 10px;
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .landing-page h1, .category-title {
+      font-size: 1.8rem;
+    }
+    .question-container {
+      font-size: 1.2rem;
+    }
+    .category-btn, .choices-container button {
+      font-size: 0.9rem;
+    }
+  }
