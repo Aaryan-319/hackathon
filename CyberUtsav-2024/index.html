@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Quiz Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+    <!-- Landing Page -->
+    <center>
+        <div class="landing-page" id="landingPage">
+            <h1>MindSpark Trivia</h1>
+            <p>Where curiosity meets competition</p>
+            <div id="categories" class="categories">
+    </center>
+    <!-- For the buttons -->
+    <button class="category-btn" data-category="Science">
+        <i class="fas fa-atom"></i> Science
+    </button>
+    <button class="category-btn" data-category="Math">
+        <i class="fas fa-infinity"></i> Math
+    </button>
+    <button class="category-btn" data-category="History">
+        <i class="fas fa-landmark"></i> History
+    </button>
+    <button class="category-btn" data-category="Geography">
+        <i class="fas fa-tree"></i> Geography
+    </button>
+    <button class="category-btn" data-category="Technology">
+        <i class="fas fa-phone"></i> Technology
+    </button>
+    <button class="category-btn" data-category="Literature">
+        <i class="fas fa-book"></i> Literature
+    </button>
+    <button class="category-btn" data-category="Sports">
+        <i class="fas fa-soccer-ball"></i> Sports
+    </button>
+    <button class="category-btn" data-category="Movies">
+        <i class="fas fa-headphones"></i> Movies
+    </button>
+    </div>
+    </div>
+
+    <!-- Quiz Container -->
+    <div class="quiz-container hidden" id="quizContainer">
+        <h2 class="category-title" id="categoryTitle"></h2>
+        <div class="progressBar" id="progressBar"></div>
+        <div class="question-container" id="questionContainer"></div>
+        <div class="choices-container" id="choicesContainer"></div>
+        <div class="feedback" id="feedback"></div>
+        <div class="livesContainer" id="livesContainer">Lives: 3</div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+
+</html>
