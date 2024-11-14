@@ -83,3 +83,11 @@
     color: rgb(125, 212, 255); 
     text-decoration: azure;
 }
+body {
+  background-image: url('Image.jpeg'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center center; 
+  height: 100vh; 
+  margin: 0;
+}

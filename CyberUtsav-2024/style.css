@@ -198,3 +198,11 @@
   .restart-btn:hover {
     background-color: #45a049; 
   }
+  body {
+    background-image: url('Image.jpeg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    height: 100vh; 
+    margin: 0;
+  }
